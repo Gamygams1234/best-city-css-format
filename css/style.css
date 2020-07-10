@@ -50,6 +50,13 @@ a {
   margin-bottom: 6px;
 }
 
+.name a,
+.main-nav a {
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+}
+
 .main-nav a {
   font-size: 0.95em;
   color: #3acec2;
@@ -58,13 +65,6 @@ a {
 
 .main-nav a:hover {
   color: #093a58;
-}
-
-/* now setting our a tags to display block will make it cl */
-.name a,
-.main-nav a {
-  padding: 10px 15px;
-  display: block;
 }
 
 /* ---- Layout Containers ---- */
@@ -79,7 +79,6 @@ a {
   padding-bottom: 1.5em;
   background: #3acec2;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .main-footer {
@@ -92,21 +91,18 @@ a {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 789px) {
   .wrap {
     min-height: calc(100vh - 89px);
   }
 
   .container {
-    width: 80%;
+    width: 85%;
     max-width: 1150px;
     margin: 0 auto;
   }
-  /* we can set it as inline block in order to ensure that we can control width and height */
-  .name,
-  .main-nav li {
-    display: inline-block;
-  }
-  .name {
+
+  .feat-img {
+    width: 300px;
   }
 }
