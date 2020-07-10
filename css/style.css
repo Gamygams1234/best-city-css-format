@@ -1,7 +1,10 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-
+* {
+  /* this will include account for our padding being apart of the width */
+  box-sizing: border-box;
+}
 body {
   line-height: 1.6;
   color: #3a3a3a;
@@ -26,8 +29,8 @@ a {
 /* adding padding to help with our margin issue */
 
 .container {
-  width: 70%;
-  margin: 0 auto;
+  /* this will add a bit of white space around the edges */
+  padding: 0 1em 0 1em;
 }
 
 .main-header {
@@ -41,3 +44,15 @@ a {
 }
 
 /* ---- Page Elements ---- */
+
+/* ================================= 
+ Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+}
