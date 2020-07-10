@@ -126,4 +126,12 @@ a {
     padding: 15px;
     border: solid 1px #d9e4ea;
   }
+  /* adding a clearfix so the content does not collapse */
+  .clearfix::after {
+    /* creates empty virtual element */
+    content: " ";
+    display: table;
+    /* clears any collapsed space on both sides of the contatiner */
+    clear: both;
+  }
 }
