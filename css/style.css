@@ -60,7 +60,7 @@ a {
   color: #093a58;
 }
 
-/* if we put padding on the links, the padding only goes side to side since it is an inline element */
+/* now setting our a tags to display block will make it cl */
 .name a,
 .main-nav a {
   padding: 10px 15px;
@@ -79,6 +79,7 @@ a {
   padding-bottom: 1.5em;
   background: #3acec2;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .main-footer {
@@ -103,11 +104,9 @@ a {
   }
   /* we can set it as inline block in order to ensure that we can control width and height */
   .name,
-  .main-nav,
   .main-nav li {
     display: inline-block;
   }
   .name {
-    margin-right: 50px;
   }
 }
