@@ -55,4 +55,9 @@ a {
     margin: 0 auto;
     max-width: 1000px;
   }
+  /* we are grabbing the wrap and making sure that it is at least takes up the screen */
+  /*  then we subtract the 89 px in order to account for the height of the footer  */
+  .wrap {
+    min-height: calc(100vh - 89px);
+  }
 }
