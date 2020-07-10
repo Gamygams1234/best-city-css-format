@@ -102,11 +102,25 @@ a {
     margin: 0 auto;
   }
 
-  /* setting the image to float to the right out of document flow */
+  /* this will still make the browser look strange */
+  /* adding floats to the name and tha nav to make them out of document flow */
+  /* starting by putting then name to the left and the nav to the right */
+  .name {
+    float: left;
+  }
+  .main-nav {
+    float: right;
+  }
+  /* if we put the items to right, then it will reverse the order of the nav */
+  .main-nav li {
+    margin-left: 12px;
+    float: left;
+  }
+
   .feat-img {
     width: 300px;
     float: right;
-    /* adding margin to the actual image rather than the text */
+
     margin: 5px 0 25px 25px;
     /* placing the padding for styling purposes */
     padding: 15px;
