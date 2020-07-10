@@ -62,8 +62,9 @@ a {
 
 /* if we put padding on the links, the padding only goes side to side since it is an inline element */
 .name a,
-.main-nav li a {
-  padding: 20px;
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
 }
 
 /* ---- Layout Containers ---- */
@@ -100,16 +101,12 @@ a {
     max-width: 1150px;
     margin: 0 auto;
   }
-  /* this will put the name and the list items to take up only as much as the content */
+  /* we can set it as inline block in order to ensure that we can control width and height */
   .name,
+  .main-nav,
   .main-nav li {
-    display: inline;
+    display: inline-block;
   }
-  /* we want to also put the main dav inline so it doesn't take the whole row and it can be next to the h1 name */
-  .main-nav {
-    display: inline;
-  }
-  /* the margin works for setting inline elements , but the width is not */
   .name {
     margin-right: 50px;
   }
