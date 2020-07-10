@@ -126,6 +126,14 @@ a {
     padding: 15px;
     border: solid 1px #d9e4ea;
   }
+  .primary {
+    float: left;
+    width: 35%;
+  }
+  .secondary {
+    float: right;
+    width: 55%;
+  }
   /* adding a clearfix so the content does not collapse */
   .clearfix::after {
     /* creates empty virtual element */
@@ -133,10 +141,5 @@ a {
     display: table;
     /* clears any collapsed space on both sides of the contatiner */
     clear: both;
-  }
-  .content {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-gap: 20px;
   }
 }
