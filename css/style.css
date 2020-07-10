@@ -134,4 +134,9 @@ a {
     /* clears any collapsed space on both sides of the contatiner */
     clear: both;
   }
+  .content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 20px;
+  }
 }
